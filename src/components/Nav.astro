@@ -3,6 +3,7 @@ import Icon from './Icon.astro';
 import type { iconPaths } from './IconPaths';
 import ThemeToggle from './ThemeToggle.astro';
 import LanguagePicker from '../components/LanguagePicker.astro';
+import Logo from './logo.astro';
 
 /** Main menu items */
 const textLinks: { label: string; href: string }[] = [
@@ -33,7 +34,7 @@ const isCurrentPage = (href: string) => {
 <nav>
 	<div class="menu-header">
 		<a href="/" class="site-title">
-			<Icon icon="terminal-window" color="var(--accent-regular)" size="1.6em" gradient />
+			<Logo color="var(--accent-regular)" size="1.6em" gradient />
 			Blacksword Studio
 		</a>
 		<menu-button>
